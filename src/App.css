@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+table {
+  width: 100%; /* Maximizes the width to 100% of the parent container */
+  height: auto; /* Allows the height to adjust based on the content */
+  border-collapse: collapse; /* Collapses the borders for a cleaner look */
+}
+
+table td, table th {
+  padding: auto; /* Minimizes the padding inside the cells to reduce height */
+  white-space: nowrap; /* Prevents text from wrapping, keeping rows short */
+}
+table th:nth-child(1), table td:nth-child(1) {
+  width: 150px;
+}
+
+table th:nth-child(2), table td:nth-child(2) {
+  width: 200px;
+}
+
+table th:nth-child(3), table td:nth-child(3) {
+  width: 100px;
+}
+
+table th:nth-child(4), table td:nth-child(4) {
+  width: 250px;
+}
+
+
+
+td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+td[contenteditable="true"] {
+  background-color: #f9f9f9;
+}
